@@ -1,0 +1,73 @@
+section#muzika {
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    
+  }
+
+#playlist{
+    list-style: none;
+    
+    padding: 0;
+  }
+
+  #playlist li{
+    
+    background-color: rgb(255,255,255,0.2);
+    height: 30px;
+    
+    font-size: larger;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 8px;
+    }
+  #playlist li:hover{
+
+    background-color: rgb(255,255,255,0.4);
+  }
+
+
+  #playlist li a{
+    color:black;
+    text-decoration: none;
+  }
+  #playlist .current-song a{
+    font-weight: bold;
+  }
+
+  #lista{
+    
+    position: absolute;
+    background-color:rgb(255,255,255,0.15);
+    padding: 0px;
+    overflow-y: scroll;
+    overflow: auto;
+    margin-top: 60px;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid white;
+
+  }
+
+  #audioPlayer{
+    width: 400px;
+
+  }
+
+  #Aplayer{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    margin-left: -200px;
+
+
+
+  }
+
+  section#muzika img{
+
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    margin-left: -150px;
+    
+  }

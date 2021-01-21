@@ -1,0 +1,45 @@
+.game-board {
+    margin-top: 50px;
+    
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+}
+.images {
+    margin-top: 50px;
+    cursor: pointer;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+}
+
+.hover{
+    background: violet;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background: #444;
+  border: 1px solid #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+  width: 150px;
+  height: 150px;
+}
+
+.slika {
+    background: #444;
+    border: 1px solid #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+    width: 150px;
+    height: 150px;
+  }

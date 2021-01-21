@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="igra.css">
+    <link rel="stylesheet" href="audioPlayer.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#muzika">MUZIKA</a></li>
+                <li><a href="#igra">IGRA</a></li>
+                <li><a href="#jednacina">JEDNACINA</a></li>
+              </ul>
+            </nav>
+        <section id="home">
+          <h1>Dobro dosli  </h1>
+          <p class="lead">Odabirom na ponudjenje opcija iz navigacijonog bara<br>bicete prebaceni na odgovarajuce polje</p>
+        </section>
+        <section id="muzika">
+            
+    <div id="lista">
+    <ul id="playlist">
+        <li class="current-song"><a href="Mile Kitic - Zasto bas ti.mp3">Mile Kitic - Zasto bas ti</a></li>
+        <li><a href="Baja Mali Knindza - Alkos nema perspektivu - (LIVE) - (Simona 2019).mp3">Baja Mali Knindza - Alkos</a></li>
+        <li><a href="Krajiska grupa Majkani - Nikola Tesla - Atomska bomba BN Music Etno 2018.mp3">Majkani - Nikola Tesla</a></li>
+
+    </ul>
+        
+    </div>
+    <img src="#" alt=""  height="300px">
+    <div id="Aplayer">  
+    <audio src="" controls id="audioPlayer">
+        Sorry, your browser doesn't support html5!
+    
+    </audio>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="audioPlayer.js"></script>
+    <script>
+        
+        audioPlayer();
+    </script>
+        </section>
+        <section id="igra">
+            
+            <div class="game-board">
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+                <div class="box" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
+              </div>
+              <div class="images">
+                <img class="slika" src="viser_img/1v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/2v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/3v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/4v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/5v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/6v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/7v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/8v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+                <img class="slika" src="viser_img/9v.jpg" alt="" draggable="true" ondragstart="drag(event)" >
+              </div>
+              
+              <script src="igra.js"></script>
+              
+        </section>
+        <section id="jednacina">
+            <div id="matematika">
+                <form name="matrix">
+                    <p><b>Unesite brojeve za resavanja linearne jednacine: </b></p>
+                    <table cellspacing="8">
+                    <tr>
+                      <td valign="TOP"><table>
+                        <tr>
+                          <th>x<sub>1</sub></th>
+                          <th>x<sub>2</sub></th>
+                          <th>x<sub>3</sub></th>
+                          <th>Aug.</th>
+                        </tr>
+                        <tr>
+                          <td><br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="a11" size="5"></td>
+                          <td><input type="text" name="a12" size="5"></td>
+                          <td><input type="text" name="a13" size="5"></td>
+                          <td><b>:</b> <input type="text" name="a14" size="5"></td>
+                        </tr>
+                        <tr>
+                          <td><br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="a21" size="5"></td>
+                          <td><input type="text" name="a22" size="5"></td>
+                          <td><input type="text" name="a23" size="5"></td>
+                          <td><b>:</b> <input type="test" name="a24" size="5"></td>
+                        </tr>
+                        <tr>
+                          <td><br />
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><input type="text" name="a31" size="5"></td>
+                          <td><input type="text" name="a32" size="5"></td>
+                          <td><input type="text" name="a33" size="5"></td>
+                          <td><b>:</b> <input type="text" name="a34" size="5"></td>
+                        </tr>
+                      </table>
+                      </td>
+                      <td>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                      <td valign="BOTTOM" rowspan="2"><table cellspacing="4" cellpadding="4">
+                        <tr>
+                          <td align="LEFT" valign="RIGHT">&nbsp;&nbsp;&nbsp;&nbsp; <input TYPE="button"
+                          VALUE="Solve" SIZE="10" onClick="solve(matrix)"> </td>
+                        </tr>
+                        <tr>
+                          <td align="CENTER">x1 = <input type="text" name="x1" size="10"></td>
+                        </tr>
+                        <tr>
+                          <td align="CENTER">x2 = <input type="text" name="x2" size="10"></td>
+                        </tr>
+                        <tr>
+                          <td align="CENTER">x3 = <input type="text" name="x3" size="10"></td>
+                        </tr>
+                      </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>&nbsp; </td>
+                    </tr>
+                    </table>
+                    <p><input type="reset" value="Reset"></p>
+                    </form>
+                    <script src="jednacina.js"></script>
+            </div>
+        </section>
+      </div>
+</body>
+</html>
